@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="4dp"
+    android:layout_margin="25dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/restaurent_list_row_image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:padding="10dp"
+                android:src="@drawable/home_nav_d_blue" />
+
+            <TextView
+                android:id="@+id/restaurent_list_row_area"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:layout_toRightOf="@+id/restaurent_list_row_image"
+                android:layout_below="@+id/restaurent_list_row_name"
+                android:text="J M Road" />
+
+            <TextView
+                android:id="@+id/restaurent_list_row_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toRightOf="@+id/restaurent_list_row_image"
+                android:layout_toLeftOf="@+id/restaurent_list_row_points"
+                android:gravity="center_vertical"
+                android:layout_alignParentTop="true"
+                android:text="ShivSagar"
+                android:textSize="16sp"
+                android:textColor="#4f4f4f" />
+
+            <TextView
+                android:id="@+id/restaurent_list_row_points"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:background="@drawable/box"
+                android:textSize="25sp"
+                android:text="100" />
+
+        </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

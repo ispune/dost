@@ -1,0 +1,79 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_blue"
+    tools:context="com.inclinestudios.android.dost_app_1.MainLoginActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/fullscreen_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOST"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:layout_marginBottom="80dp"
+            android:textStyle="bold" />
+
+        <!-- This FrameLayout insets its children based on system windows using
+             android:fitsSystemWindows. -->
+        <ImageButton
+            android:id="@+id/gLogin"
+            android:layout_below="@+id/fullscreen_content"
+            android:layout_width="350dp"
+            android:layout_height="77dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/google" />
+
+
+
+
+        <!--<Button
+            android:id="@+id/gLogin"
+            android:layout_below="@+id/fullscreen_content"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/gplus_button_final"
+            android:text="Google+" />
+
+        <Button
+            android:id="@+id/fLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/gLogin"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/fb_button_final"
+            android:text="Facebook" />-->
+
+
+        <!--<Button
+            android:id="@+id/btnRedeem"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:text="Redeem" />
+
+        <Button
+            android:id="@+id/btnTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|top"
+            android:text="Tutorial" />-->
+
+    </RelativeLayout>
+
+</FrameLayout>

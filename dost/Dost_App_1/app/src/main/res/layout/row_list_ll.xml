@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/a_date_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentLeft="true"
+        android:text="5 July"
+        android:textColor="@color/micro_text_light"
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/a_user_pic_ll"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/a_date_ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/user_dp"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/a_user_name_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a_date_ll"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/a_user_pic_ll"
+        android:text="Kaustubh Khare"
+        android:textColor="@color/micro_text_light"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/a_desc_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/a_user_name_ll"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Or is DVD:BluRay::BluRay:4K/8K?#SAT, amirite?Hello, kaustubh, kjslkfls lksdfjlsfsdvdskvbkjsdbvjsnjv sbvhsbd vjks k kdhu sdfg ysgfkskhs  dsvsv"
+        android:textColor="#4f4f4f"
+        android:textSize="15dp" />
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:layout_marginLeft="16dp"
+    android:background="#ffffffff"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/back"
+        android:adjustViewBounds="true">
+
+        <ImageView
+            android:id="@+id/image_restro"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@color/abc_search_url_text_normal"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/user_dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_marginTop="5dp"
+            android:text="Kaustubh Khare"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/white"
+            android:layout_below="@+id/image_restro"
+            android:layout_alignParentLeft="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="kharekaustubh10@gmail.com"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentLeft="true" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:paddingTop="8dp"
+        tools:context=".NavigationDrawerFragment"
+        android:id="@+id/drawer_list" />
+
+</LinearLayout>
+

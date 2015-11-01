@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/q_tags_home"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="15dp"
+            android:textColor="@color/micro_text_light"
+            android:textStyle="bold"
+            android:text="Agriculture, Medical"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/q_dot1"
+            android:layout_toRightOf="@+id/q_tags_home"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="*"
+            />
+
+        <TextView
+            android:id="@+id/q_date_home"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/q_dot1"
+            android:textSize="15dp"
+            android:textColor="@color/micro_text_light"
+            android:textStyle="bold"
+            android:text="5 July"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/q_user_pic_home"
+            android:layout_width="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/q_tags_home"
+            android:textSize="15dp"
+            android:src="@drawable/user_dp"
+            android:layout_height="15dp" />
+
+        <TextView
+            android:id="@+id/q_user_name_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/q_user_pic_home"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/q_tags_home"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/micro_text_light"
+            android:text="Kaustubh Khare"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/q_title_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textSize="20dp"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/micro_text_light"
+            android:textStyle="bold"
+            android:layout_below="@+id/q_user_name_home"
+            android:text="Shold I buy Criterion on BluRay?"
+            android:layout_marginTop="0dp"/>
+
+        <TextView
+            android:id="@+id/q_desc_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/q_title_home"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Or is DVD:BluRay::BluRay:4K/8K?#SAT, amirite?Hello, kaustubh, kjslkfls lksdfjlsfsdvdskvbkjsdbvjsnjv sbvhsbd vjks k kdhu sdfg ysgfkskhs  dsvsv"
+            android:textColor="#4f4f4f"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/a_static_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Answer:"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/q_desc_home"
+            android:textSize="20dp"
+            android:textColor="@color/micro_text_light"/>
+
+        <TextView
+            android:id="@+id/a_desc_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/a_static_home"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:text="Or is DVD:BluRay::BluRay:4K/8K?#SAT, amirite?Hello, kaustubh, kjslkfls lksdfjlsfsdvdskvbkjsdbvjsnjv sbvhsbd vjks k kdhu sdfg ysgfkskhs  dsvsv"
+            android:textColor="#4f4f4f"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/q_upvote_no_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:text="25"
+            android:gravity="center"
+            android:textColor="@color/micro_text_light"
+            android:background="@drawable/box"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_below="@+id/a_desc_home"
+            android:layout_alignParentRight="true"
+            android:textSize="15dp"/>
+
+        <Button
+            android:id="@+id/viewMoreButtonQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="View More"
+            android:textColor="@color/micro_text_light"
+            android:layout_below="@+id/a_desc_home"
+
+            android:layout_centerHorizontal="true"
+            android:textSize="15dp"
+            android:background="@android:color/transparent"/>
+
+        <Button
+            android:id="@+id/q_upvote_home"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_below="@+id/a_desc_home"
+            android:text="Upvote"
+            android:textColor="@color/micro_text_light"
+            android:background="@color/transparent"
+            android:layout_toLeftOf="@+id/q_upvote_no_home"
+            android:textSize="15dp"/>
+
+    </RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

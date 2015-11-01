@@ -1,0 +1,33 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.inclinestudios.android.dost_app.ExpertArea">
+
+    <!-- TODO: Update blank fragment layout -->
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/signal7"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        android:id="@+id/na_image"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/na_image"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        android:paddingLeft="15dp"
+        android:textAllCaps="true"
+        android:textSize="25dp"
+
+        android:text="This Feature is only available for our Experts" />
+</RelativeLayout>
+
+
+</FrameLayout>

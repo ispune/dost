@@ -1,0 +1,183 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#ffefefef">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#ffefefef">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:id="@+id/image_verify"
+                    android:src="@drawable/verif_512_colour" />
+
+                <TextView
+                    android:id="@+id/verify_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Verification"
+                    android:textSize="24dp"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:id="@+id/verify_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Verification Info" />
+
+                <EditText
+                    android:id="@+id/editNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_text_back_final"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:hint="Enter phone number" />
+
+                <Button
+                    android:id="@+id/btnGenerateOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Send SMS"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:background="@drawable/button_final" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/confirm_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Confirm Code"
+                    android:layout_marginBottom="20dp"
+                    android:textSize="24dp"
+                    android:visibility="invisible"
+                    android:textColor="#ff000000" />
+
+                <TextView
+                    android:id="@+id/resend_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_marginBottom="10dp"
+                    android:visibility="invisible"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Resend Verification Info" />
+
+                <Button
+                    android:id="@+id/btnResend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RESEND"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="80dp"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:background="@drawable/button_final"
+                    android:visibility="invisible" />
+
+                <EditText
+                    android:id="@+id/editOTP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/edit_text_back_final"
+                    android:layout_marginBottom="10dp"
+                    android:inputType="phone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:hint="Enter the OTP you received"
+                    android:visibility="invisible" />
+
+
+                <Button
+                    android:id="@+id/btnSendOTP"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Go"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:background="@drawable/button_final"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/image_verified"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/verif2_512_colour"
+                    android:visibility="invisible" />
+
+                <Button
+                    android:id="@+id/nextButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Next"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/horizontal_margin"
+                    android:layout_marginLeft="@dimen/horizontal_margin"
+                    android:background="@drawable/button_final"
+                    android:visibility="invisible" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+
